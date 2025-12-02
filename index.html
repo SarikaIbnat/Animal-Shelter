@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+  <html>
+    <header class="hero-header">
+    <img src="favicon.png" class="favicon" alt="Favicon">
 
+    <div class="counter-box">
+        <h1>Lives Saved</h1>
+        <span id="livesCount">0+</span>
+    </div>
+
+    <div class="filter-container">
+        <img src="filter-icon.png" id="filterBtn" class="filter-icon" alt="Filter">
+
+        <div id="dropdownMenu" class="dropdown">
+            <button>Option 1</button>
+            <button>Option 2</button>
+            <button>Option 3</button>
+            <button>Option 4</button>
+        </div>
+    </div>
+</header>
+
+<script>
+// --- Counter Animation ---
+let target = 540;
+let speed = 5; 
+let count = 0;
+let display = document.getElementById("livesCount");
+
+let counter = setInterval(() => {
+    count += 10;
+    if (count >= target) {
+        count = target;
+        clearInterval(counter);
+    }
+    display.textContent = count + "+";
+}, speed);
+
+// --- Dropdown Toggle ---
+const filterBtn = document.getElementById("filterBtn");
+const dropdown = document.getElementById("dropdownMenu");
+
+filterBtn.addEventListener("click", () => {
+    dropdown.classList.toggle("show");
+});
+
+// Click outside to close
+document.addEventListener("click", (e) => {
+    if (!filterBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+    }
+});
+</script>
+
+  </html>
