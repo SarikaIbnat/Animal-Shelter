@@ -5,30 +5,31 @@ body {
 
 .hero-header {
     position: relative;
-    height: 300px;
-
-    /* Make the full picture fit inside the header */
-    background-image: url('dog.jpg');
-    background-size: contain;   /* Ensures the entire image is visible */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;    /* Shows behind the image if it doesn't fill the header */
-
+    height: 300px;             /* keep your existing height */
     display: flex;
     align-items: center;
     padding: 20px;
     color: white;
+
+    /* Background settings */
+    background-image: url('dog.jpg');
+    background-size: cover;      /* fills the header entirely */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Favicon top left - bigger now */
 .favicon {
+    .favicon {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 65px;      /* increased from 55px */
-    height: 65px;     /* increased from 55px */
-    border-radius: 50%;   
-    object-fit: cover;    
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+   
 }
 
 /* Lives Saved counter section */
