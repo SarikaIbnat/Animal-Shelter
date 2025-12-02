@@ -3,33 +3,34 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header with background image */
 .hero-header {
-     position: relative;
-    height: 300px;              /* fixed height */
+    position: relative;
+    width: 100%;
+    height: auto;                /* header height adjusts to image */
+    min-height: 300px;           /* ensures a minimum height */
     display: flex;
-    align-items: center;
+    justify-content: center;     /* centers header-title horizontally */
+    align-items: center;         /* centers header-title vertically */
     padding: 20px;
     color: white;
 
-    /* Background settings */
+    /* Background image settings */
     background-image: url('dog.jpg');
-    background-size: cover;      /* fills width & height, may crop a little */
+    background-size: contain;    /* ensures the full image fits */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 
-/* Favicon top left - bigger now */
+/* Favicon: smaller, circular, image contained */
 .favicon {
-    .favicon {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-   
+    width: 55px;           /* smaller than before */
+    height: 55px;
+    border-radius: 50%;    /* makes it a perfect circle */
+    object-fit: cover;     /* keeps the image fully contained inside the circle */
 }
 
 /* Lives Saved counter section */
@@ -91,10 +92,12 @@ body {
 .dropdown.show {
     display: block;
 }
+
+/* Header title centered horizontally and vertically */
 .header-title {
-    text-align: center;      /* centers the text horizontally */
-    width: 100%;             /* spans the full width of its container */
+    text-align: center;
+    width: 100%;
     color: white;
-    font-size: 48px;         /* adjust as needed */
-    margin: 0;               /* remove default margins */
+    font-size: 48px;
+    margin: 0;
 }
