@@ -4,8 +4,8 @@ body {
 }
 
 .hero-header {
-    position: relative;
-    height: 300px;             /* keep your existing height */
+     position: relative;
+    height: 300px;              /* fixed height */
     display: flex;
     align-items: center;
     padding: 20px;
@@ -13,7 +13,7 @@ body {
 
     /* Background settings */
     background-image: url('dog.jpg');
-    background-size: cover;      /* fills the header entirely */
+    background-size: cover;      /* fills width & height, may crop a little */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -24,8 +24,8 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     object-fit: cover;
 }
