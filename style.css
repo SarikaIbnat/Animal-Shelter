@@ -6,7 +6,6 @@ body {
 .hero-header {
     position: relative;
     height: 300px;
-    background-color: blue;
     background-image: url('dog.jpg'); /* CHANGE THIS to your dog image */
     background-size: cover;
     background-position: center;
