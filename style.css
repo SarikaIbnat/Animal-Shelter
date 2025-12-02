@@ -6,9 +6,14 @@ body {
 .hero-header {
     position: relative;
     height: 300px;
-    background-image: url('dog.jpg'); /* CHANGE THIS to your dog image */
-    background-size: cover;
+
+    /* Make the full picture fit inside the header */
+    background-image: url('dog.jpg');
+    background-size: contain;   /* This makes the WHOLE picture visible */
+    background-repeat: no-repeat;
     background-position: center;
+    background-color: black;    /* Shows behind the image if it doesn't fill the whole area */
+
     display: flex;
     align-items: center;
     padding: 20px;
@@ -20,8 +25,8 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40px;      /* smaller size */
-    height: 40px;     /* keep it square */
+    width: 55px;      /* smaller size */
+    height: 55px;     /* keep it square */
     border-radius: 50%;   /* makes it a circle */
     object-fit: cover;    /* keeps the image centered & cropped nicely */
 }
