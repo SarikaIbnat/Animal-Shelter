@@ -91,3 +91,10 @@ body {
 .dropdown.show {
     display: block;
 }
+.header-title {
+    text-align: center;      /* centers the text horizontally */
+    width: 100%;             /* spans the full width of its container */
+    color: white;
+    font-size: 48px;         /* adjust as needed */
+    margin: 0;               /* remove default margins */
+}
