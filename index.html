@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Your Site</title> <!-- Link your CSS file --> 
+        <link rel="stylesheet" href="style.css"> 
+    </head> 
+    <body>
 <header class="hero-header">
     <img src="favicon.png" class="favicon" alt="Favicon">
 
@@ -18,3 +26,14 @@
         </div>
     </div>
 </header>
+<script> // --- Counter Animation ---
+    let target = 540; 
+    let speed = 5; 
+    let count = 0; 
+    let display = document.getElementById("livesCount"); 
+    let counter = setInterval(() => { count += 10; if (count >= target) { count = target; clearInterval(counter); } display.textContent = count + "+"; }, speed); 
+    // --- Dropdown Toggle --- const filterBtn = document.getElementById("filterBtn"); const dropdown = document.getElementById("dropdownMenu"); 
+    filterBtn.addEventListener("click", () => { dropdown.classList.toggle("show"); }); // Click outside to close document.addEventListener("click", (e) => { if (!filterBtn.contains(e.target) && !dropdown.contains(e.target)) { dropdown.classList.remove("show"); } }); 
+</script> 
+    </body> 
+</html>
