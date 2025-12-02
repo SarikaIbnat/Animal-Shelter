@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-header {
+    position: relative;
+    height: 300px;
+    background-image: url('dog.jpg'); /* CHANGE THIS to your dog image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Favicon top left */
+.favicon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 48px;
+    height: 48px;
+}
+
+/* Lives Saved counter section */
+.counter-box {
+    margin-left: 80px;
+}
+
+.counter-box h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#livesCount {
+    font-size: 44px;
+    font-weight: 800;
+}
+
+/* Filter icon on the right */
+.filter-container {
+    margin-left: auto;
+    margin-right: 30px;
+    position: relative;
+}
+
+.filter-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    overflow: hidden;
+    width: 150px;
+    z-index: 10;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown button:hover {
+    background: #f0f0f0;
+}
+
+.dropdown.show {
+    display: block;
+}
