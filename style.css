@@ -9,10 +9,10 @@ body {
 
     /* Make the full picture fit inside the header */
     background-image: url('dog.jpg');
-    background-size: contain;   /* This makes the WHOLE picture visible */
+    background-size: contain;   /* Ensures the entire image is visible */
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;    /* Shows behind the image if it doesn't fill the whole area */
+    background-color: black;    /* Shows behind the image if it doesn't fill the header */
 
     display: flex;
     align-items: center;
@@ -20,15 +20,15 @@ body {
     color: white;
 }
 
-/* Favicon top left */
+/* Favicon top left - bigger now */
 .favicon {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 55px;      /* smaller size */
-    height: 55px;     /* keep it square */
-    border-radius: 50%;   /* makes it a circle */
-    object-fit: cover;    /* keeps the image centered & cropped nicely */
+    width: 65px;      /* increased from 55px */
+    height: 65px;     /* increased from 55px */
+    border-radius: 50%;   
+    object-fit: cover;    
 }
 
 /* Lives Saved counter section */
