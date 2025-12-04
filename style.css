@@ -13,7 +13,7 @@ header {
     background-position: top center; /* ensures top part of image is visible */
     background-repeat: no-repeat;
 
-    height: 200px;                /* adjust to fit your header and logo */
+    height: 250px;                /* adjust to fit your header and logo */
     display: flex;
     flex-direction: column;
     justify-content: center;      /* centers text vertically */
