@@ -1,39 +1,122 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <title>Your Site</title> <!-- Link your CSS file --> 
-        <link rel="stylesheet" href="style.css"> 
-    </head> 
-    <body>
-<header class="hero-header">
-    <img src="favicon.png" class="favicon" alt="Favicon">
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Happy Paws Animal Shelter" />
 
-    <div class="counter-box">
-        <h1>Lives Saved</h1>
-        <h1 class="header-title">Arizona Animal Shelter</h1>
-        <span id="livesCount">0+</span>
-    </div>
+    <title>Happy Paws Animal Shelter</title>
 
-    <div class="filter-container">
-        <img src="filter-icon.png" id="filterBtn" class="filter-icon" alt="Filter">
+    <!-- LINK TO EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div id="dropdownMenu" class="dropdown">
-            <button>Option 1</button>
-            <button>Option 2</button>
-            <button>Option 3</button>
-            <button>Option 4</button>
-        </div>
-    </div>
-</header>
-<script> // --- Counter Animation ---
-    let target = 540; 
-    let speed = 5; 
-    let count = 0; 
-    let display = document.getElementById("livesCount"); 
-    let counter = setInterval(() => { count += 10; if (count >= target) { count = target; clearInterval(counter); } display.textContent = count + "+"; }, speed); 
-    // --- Dropdown Toggle --- const filterBtn = document.getElementById("filterBtn"); const dropdown = document.getElementById("dropdownMenu"); 
-    filterBtn.addEventListener("click", () => { dropdown.classList.toggle("show"); }); // Click outside to close document.addEventListener("click", (e) => { if (!filterBtn.contains(e.target) && !dropdown.contains(e.target)) { dropdown.classList.remove("show"); } }); 
-</script> 
-    </body> 
+<body>
+
+    <!-- HEADER -->
+    <header id="top">
+        <img src="assets/logo.png" width="100" height="100" alt="Happy Paws Logo" />
+        <h1>Happy Paws Animal Shelter</h1>
+        <p>Your local rescue for cats, dogs, and other furry friends.</p>
+    </header>
+
+    <!-- SIDE NAVIGATION -->
+    <aside>
+        <h2>Navigation</h2>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#hours">Hours</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#animals">Animals</a>
+            <a href="#table">Fees</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h1>About Us</h1>
+            <p>
+                Happy Paws Animal Shelter rescues, rehabilitates, and rehomes animals.
+                We rely on community support and volunteer help.
+            </p>
+        </section>
+
+        <!-- HOURS -->
+        <section id="hours">
+            <h1>Hours of Operation</h1>
+            <ul>
+                <li>Monday–Friday: 9 AM – 6 PM</li>
+                <li>Saturday: 10 AM – 4 PM</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </section>
+
+        <!-- VOLUNTEER STEPS -->
+        <section id="volunteer">
+            <h1>How to Become a Volunteer</h1>
+            <ol>
+                <li>Complete the volunteer application.</li>
+                <li>Attend a training session.</li>
+                <li>Shadow a senior volunteer.</li>
+                <li>Start your volunteer schedule.</li>
+            </ol>
+        </section>
+
+        <!-- ANIMAL IMAGES -->
+        <section id="animals">
+            <h1>Meet Our Animals</h1>
+            <p>Here are some of our adoptable friends:</p>
+
+            <img src="assets/dog1.jpg" width="250" alt="Adoptable dog" />
+            <img src="assets/cat1.jpg" width="250" alt="Adoptable cat" />
+        </section>
+
+        <!-- TABLE -->
+        <section id="table">
+            <h1>Adoption Fees</h1>
+
+            <table>
+                <tr>
+                    <th>Animal</th>
+                    <th>Fee</th>
+                </tr>
+                <tr>
+                    <td>Dog</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Cat</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Rabbit</td>
+                    <td>$50</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Email: <a href="mailto:info@happypaws.org">info@happypaws.org</a></p>
+            <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p>
+                Visit Adobe:
+                <a href="https://www.adobe.com" target="_blank">Adobe Website</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Happy Paws Animal Shelter. All Rights Reserved.</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
 </html>
