@@ -21,10 +21,12 @@ header {
 
 
 header .logo {
-    width: 120px;      /* adjust as you like */
+    width: 80px;       /* adjust size as needed */
     height: auto;
-    display: block;
-    margin: 0 auto 10px;  /* centers logo */
+    margin-bottom: 5px;
+
+    border-radius: 50%;  /* makes the logo perfectly round */
+    border: 2px solid white; /* optional: white border around the logo */
 }
 
 
