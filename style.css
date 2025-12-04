@@ -1,103 +1,89 @@
+/* GENERAL PAGE STYLING */
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
 }
 
-/* Header with background image */
-.hero-header {
-    position: relative;
-    width: 100%;
-    height: auto;                /* header height adjusts to image */
-    min-height: 300px;           /* ensures a minimum height */
-    display: flex;
-    justify-content: center;     /* centers header-title horizontally */
-    align-items: center;         /* centers header-title vertically */
-    padding: 20px;
+/* HEADER */
+header {
+    background-color: #4fa3d1;
     color: white;
-
-    /* Background image settings */
-    background-image: url('dog.jpg');
-    background-size: contain;    /* ensures the full image fits */
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-/* Favicon: smaller, circular, image contained */
-.favicon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 55px;           /* smaller than before */
-    height: 55px;
-    border-radius: 50%;    /* makes it a perfect circle */
-    object-fit: cover;     /* keeps the image fully contained inside the circle */
-}
-
-/* Lives Saved counter section */
-.counter-box {
-    margin-left: 80px;
-}
-
-.counter-box h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-#livesCount {
-    font-size: 44px;
-    font-weight: 800;
-}
-
-/* Filter icon on the right */
-.filter-container {
-    margin-left: auto;
-    margin-right: 30px;
-    position: relative;
-}
-
-.filter-icon {
-    width: 40px;
-    cursor: pointer;
-}
-
-/* Dropdown Styles */
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background: white;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    overflow: hidden;
-    width: 150px;
-    z-index: 10;
-}
-
-.dropdown button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: white;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.dropdown button:hover {
-    background: #f0f0f0;
-}
-
-.dropdown.show {
-    display: block;
-}
-
-/* Header title centered horizontally and vertically */
-.header-title {
     text-align: center;
-    width: 100%;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 8px;
+}
+
+/* NAVIGATION SIDEBAR */
+aside {
+    background-color: #eee;
+    padding: 15px;
+    width: 200px;
+    float: right;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+aside nav a {
+    display: block;
+    margin: 8px 0;
+    color: #0077aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN SECTION */
+main {
+    padding: 20px;
+}
+
+/* SECTION SPACING */
+section {
+    margin-bottom: 40px;
+}
+
+/* IMAGES */
+img {
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* TABLE STYLING */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 10px;
+}
+
+table, td, th {
+    border: 1px solid #999;
+    padding: 8px;
+}
+
+th {
+    background-color: #4fa3d1;
     color: white;
-    font-size: 48px;
-    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4fa3d1;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
 }
