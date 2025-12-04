@@ -8,16 +8,21 @@ body {
 
 /* HEADER */
 header {
-    background-image: url("dog.jpg"); 
-    background-size: cover;        /* fills entire box */
-    background-position: center;   /* centers important part of image */
+    background-image: url("dog.jpg"); /* your image path */
+    background-size: cover;       /* ensures it covers entire header */
+    background-position: top center; /* ensures top part of image is visible */
     background-repeat: no-repeat;
 
-    height: 150px;       /* ← THIS controls how tall the header is */
-    text-align: center;
-    padding-top: 20px;   /* makes room for the logo + text */
+    height: 200px;                /* adjust to fit your header and logo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      /* centers text vertically */
+    align-items: center;
+
     color: white;
+    text-align: center;
 }
+
 
 
 header .logo {
