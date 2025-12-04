@@ -13,7 +13,7 @@ header {
     background-position: center;   /* centers important part of image */
     background-repeat: no-repeat;
 
-    height: 250px;       /* ← THIS controls how tall the header is */
+    height: 150px;       /* ← THIS controls how tall the header is */
     text-align: center;
     padding-top: 20px;   /* makes room for the logo + text */
     color: white;
