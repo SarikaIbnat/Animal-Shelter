@@ -15,6 +15,12 @@ header {
     padding: 40px;               /* keeps your text looking good */
 }
 
+header .logo {
+    width: 120px;      /* adjust as you like */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;  /* centers logo */
+}
 
 
 
