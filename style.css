@@ -8,15 +8,15 @@ body {
 
 /* HEADER */
 header {
-    background-color: #4fa3d1;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-image: url("assets/header-banner.jpg"); /* <-- your image path */
+    background-size: cover;     /* makes the image fill the header */
+    background-position: center; /* keeps image centered */
+    background-repeat: no-repeat;
+    padding: 40px;               /* keeps your text looking good */
 }
 
-header img {
-    border-radius: 8px;
-}
+
+
 
 /* NAVIGATION SIDEBAR */
 aside {
