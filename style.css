@@ -8,7 +8,7 @@ body {
 
 /* HEADER */
 header {
-    background-image: url("assets/header-banner.jpg"); /* <-- your image path */
+    background-image: url("dog.jpg"); /* <-- your image path */
     background-size: cover;     /* makes the image fill the header */
     background-position: center; /* keeps image centered */
     background-repeat: no-repeat;
