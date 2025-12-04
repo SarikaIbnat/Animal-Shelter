@@ -8,12 +8,17 @@ body {
 
 /* HEADER */
 header {
-    background-image: url("dog.jpg"); /* <-- your image path */
-    background-size: cover;     /* makes the image fill the header */
-    background-position: center; /* keeps image centered */
+    background-image: url("assets/header-banner.jpg"); 
+    background-size: cover;        /* fills entire box */
+    background-position: center;   /* centers important part of image */
     background-repeat: no-repeat;
-    padding: 40px;               /* keeps your text looking good */
+
+    height: 250px;       /* ← THIS controls how tall the header is */
+    text-align: center;
+    padding-top: 20px;   /* makes room for the logo + text */
+    color: white;
 }
+
 
 header .logo {
     width: 120px;      /* adjust as you like */
