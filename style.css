@@ -9,29 +9,29 @@ body {
 /* HEADER */
 header {
     background-image: url("dog.jpg"); /* your image path */
-    background-size: cover;       /* ensures it covers entire header */
-    background-position: top center; /* ensures top part of image is visible */
+    background-size: contain;        /* ensures the entire image fits inside the header */
+    background-position: center;     /* centers the image */
     background-repeat: no-repeat;
 
-    height: 250px;                /* adjust to fit your header and logo */
+    height: 250px;                   /* adjust as needed */
     display: flex;
     flex-direction: column;
-    justify-content: center;      /* centers text vertically */
+    justify-content: center;         /* centers text vertically */
     align-items: center;
 
     color: white;
     text-align: center;
 }
 
-
-
+/* LOGO */
 header .logo {
-    width: 80px;       /* adjust size as needed */
-    height: auto;
+    width: 80px;                     /* size of the logo */
+    height: 80px;                    /* make height same as width for perfect circle */
     margin-bottom: 5px;
 
-    border-radius: 50%;  /* makes the logo perfectly round */
-    border: 2px solid white; /* optional: white border around the logo */
+    border-radius: 50%;              /* makes the logo perfectly round */
+    border: 2px solid white;         /* optional white border */
+    object-fit: cover;               /* ensures logo image fits inside circle without distortion */
 }
 
 
