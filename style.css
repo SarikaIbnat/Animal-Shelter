@@ -12,7 +12,7 @@ header {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    height: 100px; /* Set a fixed height for header */
+    height: 200px; /* Set a fixed height for header */
     overflow: hidden; /* Prevent image from overflowing */
 }
 
