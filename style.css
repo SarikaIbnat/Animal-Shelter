@@ -8,34 +8,31 @@ body {
 
 /* HEADER */
 header {
-    width: 100%;                        /* full width */
-    height: auto;                        /* height adjusts automatically based on content */
-    background-image: url("dog.jpg");    /* your image path */
-    background-size: cover;              /* cover the entire header area */
-    background-position: center;         /* centers the image */
-    background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;             /* centers content vertically */
-    align-items: center;
-
-    color: white;
+    position: relative;
     text-align: center;
-    position: relative;                  /* needed for logo positioning */
-    padding: 50px 0;                     /* gives vertical space to header */
+    width: 100%;
+    color: white;
 }
 
-/* LOGO */
+/* Header image scales naturally */
+header .header-img {
+    width: 100%;
+    height: auto;        /* maintains aspect ratio */
+    display: block;
+}
+
+/* Logo */
 header .logo {
-    width: 80px;                          /* size of the logo */
-    height: 80px;                         /* equal width & height */
-    border-radius: 50%;                   /* makes it perfectly round */
-    border: 2px solid white;              /* optional white border */
-    object-fit: cover;                     /* ensures image fits circle nicely */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;  /* perfectly round */
+    border: 2px solid white;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-
 
 
 /* NAVIGATION SIDEBAR */
