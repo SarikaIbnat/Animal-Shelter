@@ -8,25 +8,23 @@ body {
 
 /* HEADER */
 header {
-    height: 250px;
     position: relative;
     text-align: center;
-    width: 100%;
     color: white;
 }
 
-/* Header image scales naturally */
+/* Header image fills width and keeps aspect ratio */
 header .header-img {
     width: 100%;
-    height: auto;        /* maintains aspect ratio */
+    height: auto;
     display: block;
 }
 
-/* Logo */
+/* Logo positioned on top of header image */
 header .logo {
     width: 80px;
     height: 80px;
-    border-radius: 50%;  /* perfectly round */
+    border-radius: 50%;
     border: 2px solid white;
     object-fit: cover;
     position: absolute;
