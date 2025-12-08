@@ -18,15 +18,14 @@ header {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    height: 200px; /* Set a fixed height for header */
-    overflow: hidden; /* Prevent image from overflowing */
+    height: 200px; /* Fixed header height */
+    overflow: hidden; /* optional */
 }
 
-/* Header image fills header area without stretching */
 header .header-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* cover keeps aspect ratio while filling header */
+    width: 100%;       /* Stretch image to full width */
+    height: auto;      /* Height adjusts proportionally */
+    max-height: 100%;  /* Ensure it does not exceed header height */
     display: block;
 }
 
