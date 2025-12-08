@@ -1,12 +1,16 @@
-/* GENERAL PAGE STYLING */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+
     background-image: url("sec.jpg"); /* path to your image */
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;     /* don’t tile */
+    background-size: cover;           /* cover entire viewport */
+    background-position: center;      /* center the image */
+    background-attachment: fixed;     /* optional: keeps it fixed when scrolling */
     color: #333;
-    
 }
+
 
 /* HEADER */
 header {
