@@ -18,12 +18,12 @@ header {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    height: 200px; /* Fixed header height */
+    height: 350px; /* Fixed header height */
     overflow: hidden; /* optional */
 }
 
 header .header-img {
-    width: inherit;/* Stretch image to full width */
+    width: 100%/* Stretch image to full width */
     height: auto;      /* Height adjusts proportionally */
     max-height: 100%;  /* Ensure it does not exceed header height */
     display: block;
