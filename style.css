@@ -23,8 +23,7 @@ header {
 }
 
 header .header-img {
-    width: auto;
-    max-width: 100%;/* Stretch image to full width */
+    width: inherit;/* Stretch image to full width */
     height: auto;      /* Height adjusts proportionally */
     max-height: 100%;  /* Ensure it does not exceed header height */
     display: block;
